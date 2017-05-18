@@ -8,12 +8,31 @@ html {
 }
 
 body {
-  background-image: linear-gradient(to bottom, #190909, #250000);
-  background-repeat: no-repeat;
   font-family: SegoePrint;
   font-size: 12px;
   min-height: 100%;
-  margin: 0 1%;
+  min-width: 100%;
+  margin:0;
+}
+
+body, html {
+    height: 100%;
+}
+
+.parallax { 
+  padding: 0;
+  margin: 0;
+  /* The image used */
+  background-image: url("../images/parallax/forest.jpg");
+
+  /* Full height */
+  min-height: 100%; 
+  min-width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 a:link, a:visited {
@@ -22,7 +41,7 @@ a:link, a:visited {
 
 #wrapper {
   margin: 0;
-  padding: 0;
+  padding: 1em 0 0 0;
 }
 
 #topmost {
@@ -185,4 +204,10 @@ footer {
   width = 100%;
   text-align: center;
   color:#901C1C;
+}
+
+footer small {
+  background-color: #111;
+  padding: 0 0.5em;
+  border-radius: 1em;
 }
