@@ -177,7 +177,7 @@ main {
   border-bottom-right-radius: 0;
 }
 
-div.eventYear {
+div.eventYear, div.downloadContent{
   display: block;
   max-width: 80%;
   margin: 1em 10% 1em 10%;
